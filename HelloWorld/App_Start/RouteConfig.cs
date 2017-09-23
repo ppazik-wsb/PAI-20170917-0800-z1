@@ -20,6 +20,12 @@ namespace HelloWorld
                 );
 
             routes.MapRoute(
+                name: "TestIndex",
+                url: "Test",
+                defaults: new { controller = "Test", action = "IndexView"}
+                );
+
+            routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }

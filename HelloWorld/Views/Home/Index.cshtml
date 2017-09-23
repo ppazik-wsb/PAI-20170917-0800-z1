@@ -10,6 +10,11 @@
     </div>
 
     Tyle o to kursu już za nami
+</p>
 
-    <div class="alert alert-warning" role="alert">Uwaga: Zaistniały zmiany w zakresie przedmiotu.</div>
+<p class="lead">
+    @if (DateTime.Now >= DateTime.Parse("24-09-2017 08:45:00"))
+    {
+        <div class="alert alert-warning" role="alert">Uwaga: Zaistniały zmiany w zakresie przedmiotu.</div>
+    }
 </p>

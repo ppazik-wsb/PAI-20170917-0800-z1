@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Web;
 using System.Web.Mvc;
 
@@ -12,6 +13,24 @@ namespace HelloWorld.Controllers
         public string Index()
         {
             return "TestController>Index";
+        }
+
+        public ActionResult IndexView()
+        {
+            Dictionary<string,string> lista = new Dictionary<string, string>();
+
+            lista.Add("Index", "Index");
+            lista.Add("Index View", "IndexView");
+            lista.Add("Test String", "TestString");
+            lista.Add("Test Raw Json", "TestRawJson");
+            lista.Add("Test Object Json", "TestObjJson");
+            lista.Add("Test Auth", "TestAuth");
+            lista.Add("Test Auth Ext", "TestAuthExt");
+            lista.Add("Test Redirect", "TestRedirect");
+
+            ViewBag.ListaObiektow = lista;
+
+            return View("Index");
         }
 
         public string TestString()
