@@ -23,6 +23,20 @@
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("O aplikacji", "About", "Home")</li>
                     <li>@Html.ActionLink("Kontakt", "Contact", "Home")</li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Test<span class="caret"></span></a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li>@Html.ActionLink("Test", "Index", "Test")</li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">Przypadki testowe</li>
+                            <li>@Html.ActionLink("Test String", "TestString", "Test")</li>
+                            <li>@Html.ActionLink("Test Raw Json", "TestRawJson", "Test")</li>
+                            <li>@Html.ActionLink("Test Object Json", "TestObjJson", "Test")</li>
+                            <li>@Html.ActionLink("Test Auth", "TestAuth", "Test")</li>
+                            <li>@Html.ActionLink("Test Auth Ext", "TestAuthExt", "Test")</li>
+                            <li>@Html.ActionLink("Test Redirect", "TestRedirect", "Test")</li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -31,7 +45,8 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - <em>WSB Poznań</em>, <small>data wygenrowania strony @DateTime.Now.ToLocalTime().ToLongDateString() @@ @DateTime.Now.ToLocalTime().ToLongTimeString()</small></p>
+            <p>&copy; @DateTime.Now.Year - <em>WSB Poznań</em><br />
+            <small>data wygenrowania strony @DateTime.Now.ToLocalTime().ToLongDateString() @@ @DateTime.Now.ToLocalTime().ToLongTimeString()</small></p>
         </footer>
     </div>
 
