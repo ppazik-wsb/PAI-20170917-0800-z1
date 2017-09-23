@@ -10,6 +10,7 @@ namespace HelloWorld.Controllers
     {
         public ActionResult Index()
         {
+            ViewBag.Nazwa = "nowej stronie mocy!";
             return View();
         }
 
@@ -22,7 +23,7 @@ namespace HelloWorld.Controllers
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "W tym miejscu wyświetlona zostaje dodatkowa wiadomość.";
 
             return View();
         }
