@@ -68,7 +68,11 @@ namespace HelloWorld.Controllers
         {
             if(String.IsNullOrWhiteSpace(actionName))
             {
-                return new EmptyResult();
+                // Zwrócić pustą stronę
+                //return new EmptyResult();
+
+                // Zwrócić 404
+                return new HttpNotFoundResult("Niestety strony nie znaleziono!");
             }
 
             return RedirectToRoute(actionName);
