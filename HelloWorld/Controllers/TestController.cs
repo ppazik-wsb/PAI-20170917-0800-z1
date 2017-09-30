@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HelloWorld.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
@@ -76,6 +77,18 @@ namespace HelloWorld.Controllers
             }
 
             return RedirectToRoute(actionName);
+        }
+
+        public ActionResult Table()
+        {
+            List<Student> listaStudentow = new List<Student>();
+
+            listaStudentow.Add(new Student() { ID = 1, Imie = "Jan", Nazwisko = "Nowak", DataNarodzin = DateTime.Parse("1999-02-03 05:45") });
+            listaStudentow.Add(new Student() { ID = 2, Imie = "Anna", Nazwisko = "Złotopolska", DataNarodzin = DateTime.Parse("2001-03-09 12:15") });
+            listaStudentow.Add(new Student() { ID = 3, Imie = "Adam", Nazwisko = "Mickiewicz", DataNarodzin = DateTime.Parse("1920-12-01 12:12") });
+            listaStudentow.Add(new Student() { ID = 4, Imie = "Zdzisław", Nazwisko = "Testowy", DataNarodzin = DateTime.Parse("1900-01-03 05:45") });
+
+            return View(listaStudentow);
         }
     }
 }

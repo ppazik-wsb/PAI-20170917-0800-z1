@@ -9,7 +9,7 @@
     @foreach (KeyValuePair<string,string> item in ViewBag.ListaObiektow)
     {
         <li class="list-group-item">
-            <span class="badge">@randomGen.Next(1,100)</span>
+            <span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="badge">@randomGen.Next(1,100)</span>
         @Html.ActionLink(item.Key, item.Value, "Test")</li>
     }
 </ul>
