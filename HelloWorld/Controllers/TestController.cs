@@ -28,6 +28,7 @@ namespace HelloWorld.Controllers
             lista.Add("Test Auth", "TestAuth");
             lista.Add("Test Auth Ext", "TestAuthExt");
             lista.Add("Test Redirect", "TestRedirect");
+            lista.Add("Test Tabelki", "Table");
 
             ViewBag.ListaObiektow = lista;
 

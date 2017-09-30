@@ -9,14 +9,7 @@
     @foreach (KeyValuePair<string,string> item in ViewBag.ListaObiektow)
     {
         <li class="list-group-item">
-            <span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="badge">@randomGen.Next(1,100)</span>
-        @Html.ActionLink(item.Key, item.Value, "Test")</li>
+            <span class="badge">@randomGen.Next(1,100)</span>
+        @Html.ActionLink(item.Key, item.Value, "Test")<span class="glyphicon glyphicon-education"></span></li>
     }
 </ul>
-
-<!--@Html.ActionLink("Test String", "TestString", "Test")
-@Html.ActionLink("Test Raw Json", "TestRawJson", "Test")
-@Html.ActionLink("Test Object Json", "TestObjJson", "Test")
-@Html.ActionLink("Test Auth", "TestAuth", "Test")
-@Html.ActionLink("Test Auth Ext", "TestAuthExt", "Test")
-@Html.ActionLink("Test Redirect", "TestRedirect", "Test")-->
