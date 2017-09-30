@@ -31,7 +31,10 @@
                         <td>@item.ID</td>
                         <td>@item.Imie</td>
                         <td>@item.Nazwisko</td>
-                        <td>@item.DataNarodzin</td>
+                        <td>@item.DataNarodzin @if (item.DataNarodzin >= DateTime.Parse("2000-01-01 00:00"))
+                        { <span class="label label-warning">Młodziak</span> }
+                        else if (item.DataNarodzin < DateTime.Parse("1950-01-01 00:00"))
+                        { <span class="label label-primary">Doświadczony</span> }</td>
                     </tr>
                 }
             </table>
@@ -56,6 +59,13 @@
 </div>
 
 <div class="row">
+    <div class="alert alert-danger alert-dismissable fade in">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        <strong>Uwaga!</strong> Stan krytyczny!
+    </div>
+</div>
+
+<div class="row">
     <div class="col-md-4">
         <div class="thumbnail">
             <a href="#">
@@ -69,7 +79,7 @@
     <div class="col-md-4">
         <div class="thumbnail">
             <a href="#">
-                <img src="http://i0.kym-cdn.com/entries/icons/mobile/000/005/608/nyan-cat-01-625x450.jpg" style="width:100%" />
+                <img class="img-circle" src="http://i0.kym-cdn.com/entries/icons/mobile/000/005/608/nyan-cat-01-625x450.jpg" style="width:100%" />
                 <div class="caption">
                     <p>Opis obrazka</p>
                 </div>
