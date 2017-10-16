@@ -20,6 +20,7 @@ namespace PAI.Web
                         "~/Scripts/modernizr-*"));
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
+                      "~/Scripts/umd/popper.js", // Trzeba dodać bibliotekę popper.js do załadowania na stronie przed biblioteką bootstrap.
                       "~/Scripts/bootstrap.js",
                       "~/Scripts/respond.js"));
 
