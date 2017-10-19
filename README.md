@@ -21,19 +21,35 @@ W ramach zajęć pokazowy kod źródłowy będzie udostępniany w trakcie lub po
   * CLI (Command Line Interface) - [Git SCM](https://git-scm.com/)
 
 ## 2. Ewentualnie pobranie kodu jako archiwum zip:
-Można też pobrać kod źródłowy jako archiwum zip na [GitHub](https://github.com/ppazik-wsb/PAI-20170917-0800-z1)
-Wystarczy wybrać po prawej stronie, zielony przycisk "Clone or download" a następnie "Download ZIP".
+Można też pobrać kod źródłowy jako archiwum zip na [GitHub](https://github.com/)
+Wystarczy wybrać po prawej stronie, zielony przycisk ["Clone or download"](https://github.com/ppazik-wsb/PAI-20170917-0800-z1.git) a następnie ["Download ZIP"](https://github.com/ppazik-wsb/PAI-20170917-0800-z1/archive/master.zip).
 
 # Materiał na zajęciach
 
 ## Zajęcia 1. - Wprowadzenie do aplikacji internetowych
 + Architektura klient - serwer
++ Omówienie środowiska Visual Studio 2015
++ Omówienie menadżera pakietów NuGet
 + Protokół HTTP
   + Podstawowe czasowniki HTTP
-+ Wporwadzenie do wzorca MVC
-+ Stworzenie pierwszej aplikacji ASP.NET MVC 5
++ Wporwadzenie do wzorca **M**odel **V**iew **C**ontroller (MVC)
++ Stworzenie pierwszej aplikacji pokazowej ASP.NET MVC 5 z **EF** (_Entity Framework_) i **C**reate **R**ead **U**pdate **D**elete (CRUD).
 
-## Zajęcia 2. - Omówienie MVC, Routing, Bundle, Annotations
+## Zajęcia 2. - Omówienie MVC, Bundle, Controllers, Routing, Wstęp do Annotations
++ Omówienie zastosowania repozytorium kodu na przykładzie Git i GitHub z użyciem Visual Studio Team Explorer i GitFlow
++ Omówienie "wiązania" (bundle) aplikacji, minifikacja plików JS i CSS
++ Metody zwracania danych z kontrolera:
+  + String
+  + IHttpResponse
+    + 301 - Redirect
+    + 400 - Bad request
+    + 401 - Unauthorized
+    + 403 - Forbidden
+    + 404 - Not Found
+  + JSON & XML
++ Omówienie zastosowania Routingu wraz z przykładami:
+  + Routing statyczny
+  + Routing dynamiczny
 
 ## Zajęcia 3. - Bootstrap, Responsive Web Design (RWD)
 
