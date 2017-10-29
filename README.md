@@ -1,3 +1,7 @@
+# NOWE REPOZYTORIUM
+
+https://github.com/ppazik-wsb/PAI-2017-nd0800
+
 # PAI-20170917-0800-z1
 Projektowanie Aplikacji Internetowych 2017/18, Niedziela 08:00
 
